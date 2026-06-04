@@ -1,0 +1,58 @@
+aid: opendata-sbcountyatc-gov
+name: San Bernardino County ATC OpenData
+description: >-
+  San Bernardino County ATC OpenData is a county government open-data portal for United States running CKAN.
+  It exposes the CKAN catalog API, a standardized machine-readable interface over approximately 8 datasets,
+  supporting programmatic dataset search, metadata retrieval, and resource access. Because it runs CKAN, it shares a
+  consistent API surface with every other CKAN portal, making it uniformly harvestable and integrable.
+kind: government
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+url: https://raw.githubusercontent.com/api-evangelist/opendata-sbcountyatc-gov/refs/heads/main/apis.yml
+tags:
+  - Open Data
+  - CKAN
+  - Data Catalog
+  - DCAT
+  - Government Data
+  - County Government
+  - United States
+created: '2026-06-04'
+modified: '2026-06-04'
+specificationVersion: '0.19'
+apis:
+  - aid: opendata-sbcountyatc-gov:catalog
+    name: San Bernardino County ATC OpenData CKAN Action API
+    description: >-
+      CKAN Action API for San Bernardino County ATC OpenData, a consistent JSON-over-HTTP interface over a catalog of 8 datasets. Standard actions include package_search, package_show, package_list, organization_list, group_list, tag_list, and resource_search; datastore_search is available where the DataStore extension is enabled. Base URL https://opendata.sbcountyatc.gov/api/3/action/.
+    humanURL: https://opendata.sbcountyatc.gov
+    baseURL: https://opendata.sbcountyatc.gov/api/3/action
+    tags:
+      - CKAN
+      - Action API
+      - Open Data
+      - Catalog
+      - REST
+      - JSON
+    properties:
+      - type: Documentation
+        url: https://docs.ckan.org/en/latest/api/
+      - type: Website
+        url: https://opendata.sbcountyatc.gov
+      - type: x-api-endpoint
+        url: https://opendata.sbcountyatc.gov/api/3/action/status_show
+common:
+  - type: Website
+    url: https://opendata.sbcountyatc.gov
+  - type: Documentation
+    url: https://docs.ckan.org/en/latest/api/
+  - type: Plans
+    url: plans/opendata-sbcountyatc-gov-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/opendata-sbcountyatc-gov-rate-limits.yml
+  - type: FinOps
+    url: finops/opendata-sbcountyatc-gov-finops.yml
+  - type: Review
+    url: review.yml
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
